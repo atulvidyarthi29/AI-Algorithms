@@ -2,6 +2,14 @@ import copy
 import sys
 
 
+class Node:
+    def __init__(self,state, action):
+        self.state = state
+        if action == None:
+           self.action = ''   #the move that changed the state to this
+        else:
+            self.action = action 
+
 class Puzzle:
 
     def __init__(self, state):
